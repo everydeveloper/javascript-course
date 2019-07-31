@@ -1,0 +1,28 @@
+title: Introduction to Node and Express
+tagline: Step by step to your first Express application
+description: Go from Hello World to writing an Express server.
+template:
+  name: express-server
+  repo: javascript-course-template
+  description: "A quick intro to Node and Express"
+before:
+  - type: createIssue
+    title: Set up your environment
+    body: 01-environment.md
+
+steps:
+  - title: Set up your environment
+    description: Check that Node is installed
+    event: issues.closed
+    link: "{{ repoUrl }}/issues/1"
+    actions:
+      - type: respond
+        with: 01-closed.md
+        issue: 1
+      - type: createIssue
+        title: Now do the next thing
+        body: 01-welcome.md
+        
+
+tags:
+  - JavaScript
