@@ -7,7 +7,7 @@ template:
   description: "A quick intro to Node and Express"
 before:
   - type: createIssue
-    title: Set up your environment
+    title: Set Up Your Environment
     body: 01-environment.md
 
 steps:
